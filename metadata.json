@@ -1,0 +1,6 @@
+{
+  "name": "StockSense",
+  "description": "Paper trading, portfolio tracking, technical indicators, and rule-based stock recommendations connected to the StockSense backend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.auth-dark-input {
+  color-scheme: dark;
+}
+
+.auth-dark-input:-webkit-autofill,
+.auth-dark-input:-webkit-autofill:hover,
+.auth-dark-input:-webkit-autofill:focus,
+.auth-dark-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #0b1424 inset !important;
+  -webkit-text-fill-color: #f1f5f9 !important;
+  caret-color: #f1f5f9;
+  border-color: #25344a;
+  transition: background-color 5000s ease-in-out 0s;
+}
